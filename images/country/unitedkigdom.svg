@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="flag-icons-au" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 640 480" style="enable-background:new 0 0 640 480;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#012169;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#C8102E;}
+</style>
+<g>
+	<path class="st0" d="M0,0h640v480H0V0z"/>
+	<path class="st1" d="M75,0l244,181L562,0h78v62L400,241l240,178v61h-80L320,301L81,480H0v-60l239-178L0,64V0H75z"/>
+	<path class="st2" d="M424,281l216,159v40L369,281H424z M240,301l6,35L54,480H0L240,301z M640,0v3L391,191l2-44L590,0H640z M0,0
+		l239,176h-60L0,42V0z"/>
+	<path class="st1" d="M241,0v480h160V0H241z M0,160v160h640V160H0z"/>
+	<path class="st2" d="M0,193v96h640v-96H0z M273,0v480h96V0H273z"/>
+</g>
+</svg>

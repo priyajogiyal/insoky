@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #222;
+}
+
+.container {
+  width: 1180px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 991px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+  padding: 30px 0 30px;
+}
+
+button:focus:not(:focus-visible) {
+  box-shadow: none;
+}
+
+#button-top {
+  display: inline-block;
+  background-color: #BB2649;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  box-shadow: 1px 1px 3px #000;
+}
+#button-top svg {
+  rotate: -90deg;
+  margin-top: 10px;
+}
+#button-top:hover {
+  cursor: pointer;
+  background-color: #333;
+  border: 1px solid #BB2649;
+}
+
+#button-top:active {
+  background-color: #555;
+}
+
+#button-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header {
+  background: #222;
+  width: 100%;
+  padding: 15px 0;
+  box-shadow: 0px 1px 4px #000;
+}
+.header nav {
+  width: 1180px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.header nav img {
+  width: 200px;
+}
+.header nav a {
+  background: #BB2649;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 6px;
+}
+@media only screen and (max-width: 991px) {
+  .header nav {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.banner {
+  padding: 30px 0;
+}
+.banner img {
+  width: 100%;
+  box-shadow: 1px 1px 6px #000;
+  height: 80px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #222;
+}
+.accordion-button:not(.collapsed) .arrow {
+  rotate: 30deg;
+  transition: rotate 2s ease;
+  box-shadow: none;
+}
+
+.accordion {
+  padding: 20px 0;
+  box-shadow: 1px 1px 6px #000;
+  margin-bottom: 70px;
+}
+.accordion .accordion-item {
+  background-color: #222;
+}
+.accordion .accordion-item .accordion-header {
+  padding: 20px 20px 0 20px;
+}
+.accordion .accordion-item .accordion-header .accordion-button {
+  background-color: #222;
+  border-bottom: 1px solid #BB2649;
+  position: relative;
+  padding: 0 20px 20px 20px;
+}
+.accordion .accordion-item .accordion-header .accordion-button span {
+  padding-left: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+}
+.accordion .accordion-item .accordion-header .accordion-button .arrow {
+  right: 20px;
+  position: absolute;
+  rotate: 0deg;
+  transition: rotate 2s ease;
+}
+.accordion .accordion-item .accordion-header .accordion-button:after {
+  display: none;
+}
+.accordion .accordion-item .accordion-header .accordion-button:hover span {
+  color: #BB2649;
+}
+.accordion .accordion-item .accordion-body .card-body a {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+.accordion .accordion-item .accordion-body .card-body hr {
+  border-top: 1px solid #c25d6f;
+  margin: 12px 0;
+}
+@media only screen and (max-width: 991px) {
+  .accordion {
+    margin-bottom: 40px;
+  }
+}
+
+footer {
+  padding: 50px 0 0px;
+}
+footer .innerF {
+  padding-bottom: 20px;
+}
+footer .innerF img {
+  width: 200px;
+  margin: auto;
+  display: block;
+  margin-bottom: 30px;
+}
+footer .innerF p {
+  text-align: center;
+}
+footer .innerF p a {
+  color: #BB2649;
+  padding: 0 15px;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.5px;
+}
+footer .copyright {
+  padding: 20px 0 0 0;
+  border-top: 1px solid #c25d6f;
+}
+footer .copyright p {
+  color: #7b7b7b;
+  text-align: center;
+  font-size: 14px;
+}
+
+.form-control:focus, .form-select:focus {
+  box-shadow: none;
+}
+
+::-moz-placeholder {
+  color: #c25d6f;
+}
+
+::placeholder {
+  color: #c25d6f;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+}
+
+.search {
+  padding: 5px 0;
+}
+.search .form {
+  display: flex;
+}
+.search .form .form-control, .search .form select {
+  height: 55px;
+  background-color: transparent;
+  border: 1px solid #BB2649;
+  padding: 15px 25px;
+  color: #c25d6f;
+}
+.search .form .s-btn {
+  background: #BB2649;
+  border-radius: 0 6px 6px 0;
+  color: #fff;
+}
+.search .form .loc, .search .form .citi {
+  border-radius: 0;
+}
+.search .form select {
+  border-radius: 6px 0 0 6px;
+}
+
+.intro {
+  text-align: center;
+}
+.intro h1 {
+  margin-bottom: 20px;
+  color: #BB2649;
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+.intro p {
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.cardBox {
+  padding-bottom: 15px;
+}
+.cardBox h2 {
+  font-style: italic;
+  text-align: center;
+  color: #BB2649;
+  font-size: 25px;
+}
+
+.card {
+  margin: 30px 0px;
+  border: 0;
+  background: #111;
+  border-radius: 6px;
+  box-shadow: 2px 2px 10px #111;
+}
+.card img {
+  border-radius: 6px 6px 0 0;
+}
+.card .inner {
+  padding: 30px 20px;
+}
+.card .inner h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.card .inner p {
+  margin-bottom: 30px;
+}
+.card .inner a {
+  width: 45px;
+  height: 45px;
+  background: #BB2649;
+  display: block;
+  border-radius: 50px;
+  position: absolute;
+  right: 30px;
+  padding: 9px;
+}
+.card .inner a svg {
+  rotate: -45deg;
+}/*# sourceMappingURL=style.css.map */
