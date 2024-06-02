@@ -17,8 +17,8 @@ $fontPara: "Poppins", sans-serif;
     border: $width solid $color;
 }
 @mixin inputFeild{
-    height: 50px;
+    height: 45px;
     background-color: $white !important;
-    padding: 15px 25px!important;
+    padding: 10px 25px!important;
     color:$pinkgrey !important;
 }

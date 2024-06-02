@@ -9,13 +9,16 @@
                 padding: 20px 30px;
                 h1{
                     color:$white;
-                    font-family: $fontPara;
+                    font-family: $fontHead;
                     letter-spacing: 0;
-                    padding-left:20px
+                    padding-left:20px;
+                    text-transform: uppercase;
+                    font-size: 22px;
                 }
                 .btn-close{
                     color: $white !important;
                     opacity:1;
+                    background: transparent;
                 }
             }
             .modal-body{
@@ -27,6 +30,14 @@
                     width:100% !important;
                     margin-bottom:20px !important;
                     z-index:9999999;
+                }
+                h4{
+                    font-size:20px;
+                    text-transform: uppercase;
+                    margin-bottom:0;
+                    img{
+                        margin-right:20px;
+                    }
                 }
                 .autocomplete{
                     .form-control{
