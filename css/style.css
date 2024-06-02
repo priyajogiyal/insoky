@@ -87,28 +87,29 @@ a {
   text-decoration: none;
 }
 
-.two h1 {
+.heading {
+  position: relative;
+}
+.heading h1 {
   text-transform: capitalize;
 }
-
-.two h1:before {
+.heading h1:before {
   position: absolute;
   left: 0;
   bottom: 0;
   width: 60px;
   height: 2px;
   content: "";
-  background-color: #c50000;
+  background-color: #BB2649;
+  font-weight: 900;
 }
-
-.two h1 span {
+.heading p {
   font-size: 13px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 4px;
-  line-height: 3em;
-  padding-left: 0.25em;
-  color: rgba(0, 0, 0, 0.4);
+  color: #c25d6f;
+  text-align: center;
   padding-bottom: 10px;
 }
 
@@ -187,6 +188,7 @@ button:focus:not(:focus-visible) {
 .header .inner nav a {
   color: #111;
   margin-left: 20px;
+  text-transform: uppercase;
 }
 .header .inner nav a img {
   width: 25px;
@@ -344,7 +346,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .hero {
-  background-image: url("/images/bg.jpg");
+  background-image: url("/images/region-bg.jpg");
   background-color: #fff;
   background-size: cover;
   background-repeat: no-repeat;
@@ -435,18 +437,17 @@ p, h1, h2, h3, h4, h5, h6 {
   right: 20px;
 }
 
-.intro {
-  text-align: center;
-}
 .intro h1 {
-  margin-bottom: 20px;
-  color: #BB2649;
-  font-size: 50px;
-  letter-spacing: 1px;
+  padding-top: 20%;
 }
 .intro p {
   font-weight: 400;
-  line-height: 25px;
+  line-height: 30px;
+  text-align: left;
+  font-size: 16px;
+}
+.intro img {
+  width: 100%;
 }
 
 .cardBox {
@@ -491,4 +492,17 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .card .inner a svg {
   rotate: -45deg;
+}
+
+.location-banner {
+  position: relative;
+}
+.location-banner img {
+  width: 100%;
+  border-radius: 6px;
+}
+.location-banner p {
+  position: absolute;
+  bottom: 15px;
+  left: 25px;
 }/*# sourceMappingURL=style.css.map */
