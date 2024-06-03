@@ -236,6 +236,13 @@ button:focus:not(:focus-visible) {
   box-shadow: none;
 }
 
+#countries {
+  border: 1px solid #cecece;
+  width: 800px;
+  margin: 50px auto;
+  border-radius: 6px;
+}
+
 .accordion {
   padding: 20px 0;
   margin-bottom: 70px;
@@ -246,15 +253,15 @@ button:focus:not(:focus-visible) {
 .accordion .accordion-item .accordion-header .accordion-button {
   border-bottom: 1px solid #c25d6f;
   position: relative;
-  padding: 0px 0px 8px 15px;
+  padding: 0px 0px 12px 15px;
 }
 .accordion .accordion-item .accordion-header .accordion-button img {
-  width: 20px;
+  width: 25px;
 }
 .accordion .accordion-item .accordion-header .accordion-button span {
   padding-left: 15px;
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
 }
