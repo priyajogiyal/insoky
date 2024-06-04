@@ -22,3 +22,8 @@ $fontPara: "Poppins", sans-serif;
     padding: 10px 25px!important;
     color:$pinkgrey !important;
 }
+@mixin btn{
+    background:$pink;
+    color:$white;
+    border-radius:6px;    
+}

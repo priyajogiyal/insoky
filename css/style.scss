@@ -131,10 +131,8 @@ button:focus:not(:focus-visible){
             }
             
             a.btn{                
-            background:$pink;
-            color:$white;
-            padding:10px 16px;
-            border-radius:6px;
+                @include btn;
+                padding:10px 16px;
             img{
                 margin-right:5px;
                 }
@@ -170,7 +168,7 @@ button:focus:not(:focus-visible){
 .accordion{
     padding:20px 0;
     // box-shadow: 1px 1px 6px #000;
-    margin-bottom:70px;
+    margin-bottom:30px;
     .accordion-item{
         // background-color:$primaryColor;
         .accordion-header{
