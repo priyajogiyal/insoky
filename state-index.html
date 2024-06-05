@@ -37,7 +37,7 @@
             <div class="container">
                 <div class="row">
                     <div class="search">
-                        <button type="button" class="btn s-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Search Regions, and City for Your Pleasure partner
+                        <button type="button" class="btn s-btn" data-bs-toggle="modal" data-bs-target="#mainSearch">Search Regions, and City for Your Pleasure partner
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle opacity="0.3" cx="11" cy="11" r="8" fill="#BB2649"/>
                                     <path d="M18.0419 18.5L21.5 21.9578" stroke="#BB2649" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -293,7 +293,7 @@
 
     <!-- search popup -->
 
-    <div class="modal fade mainSearch" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade mainSearch" id="mainSearch" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="mainSearchpop" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
@@ -301,12 +301,17 @@
                         <circle opacity="0.3" cx="11" cy="11" r="8" fill="#fff"/>
                         <path d="M18.0419 18.5L21.5 21.9578" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg> 
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Choose your partner for sexual pleasure</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> X </button>
+                    <h1 class="modal-title fs-5" id="mainSearchpop">Choose your partner for sexual pleasure</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> 
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M7 1.25C3.82436 1.25 1.25 3.82436 1.25 7V17C1.25 20.1756 3.82436 22.75 7 22.75H17C20.1756 22.75 22.75 20.1756 22.75 17V7C22.75 3.82436 20.1756 1.25 17 1.25H7Z" fill="#fff"/>
+                        <path d="M9.87894 14.1215L14.1216 9.87891" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9.87894 9.87894L14.1216 14.1216" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
                 </div>
-
-                <div class="modal-body">
-                    <form>
+                <!-- <form> -->
+                    <div class="modal-body">
                         <div class="row">
                             <div class="col-lg-4">
                                 <input type="text" placeholder="search" class="form-control">
@@ -322,65 +327,167 @@
                                     <option value="Female">Audio Call</option>
                                 </select>
                             </div>
-                            <div class="col-lg-4">
-                                <div class="cu-box">
-                                    <div id='' class='hidden-visually' aria-live="polite"></div>
-                                    <div class="custom-select" id="myCustomSelect">
-                                      <input type="text" id="custom-select-input3 form-control" placeholder="Region" class="select-css">
+                            <div class="col-lg-4">                              
+                                <div class="sample">
+                                    <div class='custom-select-status hidden-visually'  aria-live="polite"></div>
+                                    <div class="custom-select">
+                                      <input type="text" class="custom-select-input select-css" placeholder="Region">
                                       <span class="custom-select-icons">
-                                                        >									
-                                                    </span>
-                                      <ul class="custom-select-options hidden-all" id="custom-select-list">
-                                        <li>Uttarpradesh</li>
-                                        <li>Delhi</li>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 9L12 15" stroke="#BB2649" stroke-width="1.5" stroke-linecap="round"/>
+                                            <path opacity="0.2" d="M12 15L19 9" stroke="#BB2649" stroke-width="1.5" stroke-linecap="round"/>
+                                            </svg>
+                                            
+                                      </span>
+                                      <ul class="custom-select-options hidden-all">
+                                        <li>Andhra Pradesh</li>
+                                        <li>Arunachal Pradesh</li>
+                                        <li>Assam</li>
+                                        <li>Bihar</li>
+                                        <li>Chhattisgarh</li>
                                         <li>Goa</li>
+                                        <li>Gujarat</li>
                                         <li>Haryana</li>
+                                        <li>Himachal Pradesh</li>
+                                        <li>Jharkhand</li>
+                                        <li>Karnataka</li>
                                         <li>Kerala</li>
-                                        <li>Pujab</li>
+                                        <li>Madhya Pradesh</li>
+                                        <li>Maharashtra</li>
+                                        <li>Manipur</li>
+                                        <li>Meghalaya</li>
+                                        <li>Mizoram</li>
+                                        <li>Nagaland</li>
+                                        <li>Odisha</li>
+                                        <li>Punjab</li>
+                                        <li>Rajasthan</li>
+                                        <li>Sikkim</li>
+                                        <li>Tamil Nadu</li>
+                                        <li>Telangana</li>
+                                        <li>Tripura</li>
+                                        <li>Uttar Pradesh</li>
+                                        <li>Uttarakhand</li>
+                                        <li>West Bengal</li>
                                       </ul>
                                     </div>
-                                </div>
+                                  </div>                                  
                             </div>
                         </div>
                         <!-- end -->
                         <div class="row">
-                            <div class="col-lg-6">
-                                <div class="cu-box">
-                                    <div id='' class='hidden-visually' aria-live="polite"></div>
-                                    <div class="custom-select" id="myCustomSelect">
-                                      <input type="text" id="custom-select-input2 form-control" placeholder="Cities" class="select-css">
+                            <div class="col-lg-6">                                
+                                <div class="sample">
+                                    <div class='custom-select-status hidden-visually' x aria-live="polite"></div>
+                                    <div class="custom-select">
+                                      <input type="text" class="custom-select-input select-css" placeholder="Cities">
                                       <span class="custom-select-icons">
-                                                        >									
-                                                    </span>
-                                      <ul class="custom-select-options hidden-all" id="custom-select-list">
-                                        <li>Uttarpradesh</li>
-                                        <li>Delhi</li>
-                                        <li>Goa</li>
-                                        <li>Haryana</li>
-                                        <li>Kerala</li>
-                                        <li>Pujab</li>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 9L12 15" stroke="#BB2649" stroke-width="1.5" stroke-linecap="round"/>
+                                            <path opacity="0.2" d="M12 15L19 9" stroke="#BB2649" stroke-width="1.5" stroke-linecap="round"/>
+                                            </svg>
+                                            
+                                      </span>
+                                      <ul class="custom-select-options hidden-all">
+                                        <li>New Delhi</li>
+                                        <li>Mumbai</li>
+                                        <li>Bengaluru</li>
+                                        <li>Kolkata</li>
+                                        <li>Chennai</li>
+                                        <li>Hyderabad</li>
+                                        <li>Ahmedabad</li>
+                                        <li>Pune</li>
+                                        <li>Jaipur</li>
+                                        <li>Surat</li>
+                                        <li>Lucknow</li>
+                                        <li>Kanpur</li>
+                                        <li>Nagpur</li>
+                                        <li>Indore</li>
+                                        <li>Thane</li>
+                                        <li>Bhopal</li>
+                                        <li>Visakhapatnam</li>
+                                        <li>Patna</li>
+                                        <li>Vadodara</li>
+                                        <li>Ghaziabad</li>
+                                        <li>Ludhiana</li>
+                                        <li>Agra</li>
+                                        <li>Nashik</li>
+                                        <li>Faridabad</li>
+                                        <li>Meerut</li>
+                                        <li>Rajkot</li>
+                                        <li>Kalyan-Dombivli</li>
+                                        <li>Vasai-Virar</li>
+                                        <li>Varanasi</li>
+                                        <li>Srinagar</li>
+                                        <li>Aurangabad</li>
+                                        <li>Dhanbad</li>
+                                        <li>Amritsar</li>
+                                        <li>Navi Mumbai</li>
+                                        <li>Allahabad</li>
+                                        <li>Howrah</li>
+                                        <li>Gwalior</li>
+                                        <li>Jabalpur</li>
+                                        <li>Coimbatore</li>
+                                        <li>Vijayawada</li>                                
                                       </ul>
                                     </div>
-                                </div>
+                                </div> 
                             </div>
+
                             <div class="col-lg-6">                            
-                                <div class="cu-box">
-                                    <div id='' class='hidden-visually' aria-live="polite"></div>
-                                    <div class="custom-select" id="myCustomSelect">
-                                      <input type="text" id="custom-select-input1 form-control" placeholder="Towns" class="select-css">
+                                <div class="sample">
+                                    <div class='custom-select-status hidden-visually'  aria-live="polite"></div>
+                                    <div class="custom-select">
+                                      <input type="text" class="custom-select-input select-css" placeholder="Towns">
                                       <span class="custom-select-icons">
-                                                        >									
-                                                    </span>
-                                      <ul class="custom-select-options hidden-all" id="custom-select-list">
-                                        <li>Uttarpradesh</li>
-                                        <li>Delhi</li>
-                                        <li>Goa</li>
-                                        <li>Haryana</li>
-                                        <li>Kerala</li>
-                                        <li>Pujab</li>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 9L12 15" stroke="#BB2649" stroke-width="1.5" stroke-linecap="round"/>
+                                            <path opacity="0.2" d="M12 15L19 9" stroke="#BB2649" stroke-width="1.5" stroke-linecap="round"/>
+                                            </svg>
+                                            
+                                      </span>
+                                      <ul class="custom-select-options hidden-all">
+                                        <li>Dharamshala</li>
+                                        <li>Manali</li>
+                                        <li>Leh</li>
+                                        <li>Pushkar</li>
+                                        <li>Rishikesh</li>
+                                        <li>Gangtok</li>
+                                        <li>Mount Abu</li>
+                                        <li>Mahabalipuram</li>
+                                        <li>Pahalgam</li>
+                                        <li>Coorg</li>
+                                        <li>Lonavala</li>
+                                        <li>Mussoorie</li>
+                                        <li>Alibaug</li>
+                                        <li>Mahabaleshwar</li>
+                                        <li>Ooty</li>
+                                        <li>Hampi</li>
+                                        <li>Alleppey</li>
+                                        <li>Kumarakom</li>
+                                        <li>Munnar</li>
+                                        <li>Khandala</li>
+                                        <li>Panchgani</li>
+                                        <li>Cherrapunjee</li>
+                                        <li>Shillong</li>
+                                        <li>Tawang</li>
+                                        <li>Auli</li>
+                                        <li>Kovalam</li>
+                                        <li>Kalimpong</li>
+                                        <li>Diu</li>
+                                        <li>Kanyakumari</li>
+                                        <li>Kasol</li>
+                                        <li>Kasauli</li>
+                                        <li>Ranikhet</li>
+                                        <li>Binsar</li>
+                                        <li>Patnitop</li>
+                                        <li>Wayanad</li>
+                                        <li>Kumarakom</li>
+                                        <li>Chail</li>
+                                        <li>Kurukshetra</li>
+                                        <li>Kullu</li>
                                       </ul>
                                     </div>
-                                </div>
+                                </div> 
                             </div>
                         </div>
                         <!--  -->
@@ -583,14 +690,15 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- end -->
-                        <div class="modal-footer">
-                            <button type="button" class="btn ">Reset</button>
-                            <button type="button" class="btn ">Search</button>
-                        </div>
-                        <!-- end -->
-                    </form>
-                </div>
+                    </div>
+
+                    <!-- end -->
+                    <div class="modal-footer ">
+                        <button type="button" class="btn ">Reset</button>
+                        <button type="button" class="btn ">Search</button>
+                    </div>
+                <!-- end --> 
+            <!-- </form>                -->
             </div>
         </div>
     </div> 

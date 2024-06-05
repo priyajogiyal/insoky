@@ -27,3 +27,25 @@ $fontPara: "Poppins", sans-serif;
     color:$white;
     border-radius:6px;    
 }
+
+// scrollbar
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #cecece; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $pinkgrey; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $pink; 
+  }
