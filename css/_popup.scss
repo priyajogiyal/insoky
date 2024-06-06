@@ -39,35 +39,14 @@
                         margin-right:20px;
                     }
                 }
-                .autocomplete{
-                    .form-control{
-                    }    
-                    .suggestions{
-                        padding:10px 25px;
-                        background-color: $white;
-                        border-radius: 0 0 6px 6px;
-                        margin-top:-5px;
-                        display: none;
-                        box-shadow: 1px 1px 5px #cecece;
-                        li{
-                            list-style: none;
-                            padding:8px 0;
-                            font-size: 12px;
-                            color:$black;
-                            border-bottom:1px solid #cecece;
-                            &:last-child{
-                                border:none;
-                            }
-                        }
-                    }                
-                }
 
             }
             .modal-footer{
                 button{
                     @include btn;
-                    padding:15px 45px;
-                    margin-left:25px;
+                    padding: 12px 40px;
+                    margin-left: 25px;
+                    text-transform: uppercase;
                 }
             }
         }
@@ -187,3 +166,41 @@
     border: 0;
   }
   
+
+  #eighteenPlus {
+    .modal-dialog{
+      width: 550px;
+      .modal-content{
+        padding: 20px 25px;
+        .btn-close{
+          background: transparent;
+          position: absolute;
+          right: 25px;
+        }
+        .modal-body{
+          padding: 30px 0 15px;
+          text-align: center;
+          ul{
+            text-align: left;
+            font-size: 13px;
+            list-style: decimal;
+            li{
+              margin-bottom: 10px;
+            
+            }
+          }
+          .modal-footer{
+            button{
+              @include btn;
+              padding: 12px 40px;
+              margin-left: 25px;
+              text-transform: uppercase;
+            }
+            button.b2{
+              background-color: $white;
+            }
+          }
+        }
+      }
+    }
+  }

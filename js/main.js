@@ -1,3 +1,13 @@
+// modal show
+$(document).ready(function() {
+    var myModal = new bootstrap.Modal(document.getElementById('eighteenPlus'));
+    myModal.show();
+});
+
+
+
+//dropdown
+
 document.querySelectorAll('.custom-select').forEach(customSelect => {
 	const csInput = customSelect.querySelector('.custom-select-input');
 	const csList = customSelect.querySelector('.custom-select-options');
@@ -169,4 +179,5 @@ document.querySelectorAll('.custom-select').forEach(customSelect => {
 	  }
 	}
   });
+
   

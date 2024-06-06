@@ -64,30 +64,13 @@
 .modal.show .modal-dialog .modal-content .modal-body h4 img {
   margin-right: 20px;
 }
-.modal.show .modal-dialog .modal-content .modal-body .autocomplete .suggestions {
-  padding: 10px 25px;
-  background-color: #fff;
-  border-radius: 0 0 6px 6px;
-  margin-top: -5px;
-  display: none;
-  box-shadow: 1px 1px 5px #cecece;
-}
-.modal.show .modal-dialog .modal-content .modal-body .autocomplete .suggestions li {
-  list-style: none;
-  padding: 8px 0;
-  font-size: 12px;
-  color: #111;
-  border-bottom: 1px solid #cecece;
-}
-.modal.show .modal-dialog .modal-content .modal-body .autocomplete .suggestions li:last-child {
-  border: none;
-}
 .modal.show .modal-dialog .modal-content .modal-footer button {
   background: #BB2649;
   color: #fff;
   border-radius: 6px;
-  padding: 15px 45px;
+  padding: 12px 40px;
   margin-left: 25px;
+  text-transform: uppercase;
 }
 
 .accordion-button:not(.collapsed) {
@@ -205,6 +188,41 @@
   -webkit-clip-path: inset(50%);
   clip-path: inset(50%);
   border: 0;
+}
+
+#eighteenPlus .modal-dialog {
+  width: 550px;
+}
+#eighteenPlus .modal-dialog .modal-content {
+  padding: 20px 25px;
+}
+#eighteenPlus .modal-dialog .modal-content .btn-close {
+  background: transparent;
+  position: absolute;
+  right: 25px;
+}
+#eighteenPlus .modal-dialog .modal-content .modal-body {
+  padding: 30px 0 15px;
+  text-align: center;
+}
+#eighteenPlus .modal-dialog .modal-content .modal-body ul {
+  text-align: left;
+  font-size: 13px;
+  list-style: decimal;
+}
+#eighteenPlus .modal-dialog .modal-content .modal-body ul li {
+  margin-bottom: 10px;
+}
+#eighteenPlus .modal-dialog .modal-content .modal-body .modal-footer button {
+  background: #BB2649;
+  color: #fff;
+  border-radius: 6px;
+  padding: 12px 40px;
+  margin-left: 25px;
+  text-transform: uppercase;
+}
+#eighteenPlus .modal-dialog .modal-content .modal-body .modal-footer button.b2 {
+  background-color: #fff;
 }
 
 * {
@@ -663,4 +681,110 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 22px;
   text-transform: uppercase;
   letter-spacing: 0.2px;
+}
+
+/* The container */
+.c-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  text-align: left;
+  /* Create a custom checkbox */
+}
+.c-checkbox a {
+  color: #BB2649;
+}
+.c-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.c-checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+.c-checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* On mouse-over, add a grey background color */
+.c-checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.c-checkbox input:checked ~ .checkmark {
+  background-color: #BB2649;
+}
+
+/* Show the checkmark when checked */
+.c-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.c-checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 6px;
+  height: 13px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.registerForm {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5411764706);
+  padding: 50px 30px;
+  border: 1px solid #cecece;
+  border-radius: 6px;
+}
+.registerForm h3 {
+  margin-bottom: 10%;
+}
+.registerForm div {
+  margin-bottom: 20px;
+}
+.registerForm div input {
+  height: 45px;
+  background-color: #fff !important;
+  padding: 10px 25px !important;
+  color: #c25d6f !important;
+}
+.registerForm div small {
+  color: #BB2649;
+  text-align: left;
+}
+.registerForm p {
+  font-weight: 400;
+  font-size: 14px;
+}
+.registerForm p a {
+  color: #BB2649;
+  font-weight: 500;
+}
+.registerForm .btn {
+  background: #BB2649;
+  color: #fff;
+  border-radius: 6px;
+  padding: 12px 40px;
+  width: 100%;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
