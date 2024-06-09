@@ -357,16 +357,7 @@ p, h1, h2, h3, h4, h5, h6{
 
         .btn{
             width:80%;
-            text-transform: uppercase;
-            @include border(1px, $pink);
-            background:$white;
-            color:$pink;
-            position:relative;
-            display: block;
-            margin:auto;
-            height:50px;
-            font-family: $fontPara;
-            font-size:14px;
+            @include searchbox;
             svg{
                 position:absolute;
                 right:20px;
@@ -375,7 +366,30 @@ p, h1, h2, h3, h4, h5, h6{
     }
 }
 
-
+.seacrhResult{
+    .btn{
+        width:100%;
+        @include searchbox;
+        margin:20px 0;
+        svg{
+            position:absolute;
+            right:20px;
+        }
+    }
+}
+.breadcrumbs-container{
+    padding-top:20px;
+    padding-bottom:20px;    
+    a,span{
+        color:$black;
+        font-size:14px;
+        font-weight:400;
+    }
+    a.active{
+        color:$pink;
+        font-weight:500;
+    }
+}
 
 .intro{
     h1{

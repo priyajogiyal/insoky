@@ -28,6 +28,18 @@ $fontPara: "Poppins", sans-serif;
     border-radius:6px;    
 }
 
+@mixin searchbox{
+    text-transform: uppercase;
+    background:$white;
+    color:$pink;
+    position:relative;
+    display: block;
+    margin:auto;
+    height:50px;
+    font-family: $fontPara;
+    font-size:14px;
+    @include border(1px, $pink);
+}
 // scrollbar
 
 /* width */
@@ -48,4 +60,45 @@ $fontPara: "Poppins", sans-serif;
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: $pink; 
+  }
+
+  .searchCard{
+    display: flex;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom:30px;
+    position:relative;
+    .img{
+        min-height: 250px;
+        width: 35%;
+        height: auto;
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 6px 0 0 6px;
+        }
+    }
+    .details{
+        padding: 30px 20px;
+        h2{
+            color:$pink;
+            font-size:25px;
+            margin-bottom:20px;
+        }
+        p{
+            font-size:16px;
+            img{
+                width:15px;
+                margin-right:10px;
+            }
+
+        }
+    }
+    .conts{
+        position:absolute;
+
+    }
   }
