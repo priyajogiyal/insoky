@@ -102,14 +102,18 @@ button:focus:not(:focus-visible){
     opacity: 1;
     visibility: visible;
   }
-  
+main{
+    margin-top:120px;
+} 
 
 .header{
     width: 100%;
     padding: 15px 0;
-    position:relative;
-    z-index:3;
-    // box-shadow: 0px 1px 4px #cecece;
+    position: fixed;
+    z-index:9999;
+    box-shadow: 1px 1px 5px #e5e5e5;
+    top: 0;
+    background: $white;
     .inner{
         width:1180px;
         display: flex;
@@ -382,8 +386,12 @@ p, h1, h2, h3, h4, h5, h6{
     padding-bottom:20px;    
     a,span{
         color:$black;
-        font-size:14px;
+        font-size:16px;
         font-weight:400;
+        text-transform: capitalize;
+        &:hover{
+            color:$pink;
+        }
     }
     a.active{
         color:$pink;
@@ -566,7 +574,6 @@ p, h1, h2, h3, h4, h5, h6{
             text-align:left;
         }
     }
-
     p{
         font-weight:400;
         font-size:14px;
@@ -576,11 +583,28 @@ p, h1, h2, h3, h4, h5, h6{
         }
 
     }
-
     .btn{
         @include btn;
         padding:12px 40px;
         width:100%;
         margin-bottom:20px;
+    }
+}
+
+// single profile
+
+.back {
+    padding:20px 10px;
+    font-size:18px;
+    line-height: 18px;
+    border-bottom:1px solid $pinkgrey;
+    img{
+        margin-right:7px;
+        margin-top:-5px;
+    }
+}
+.profilegallery{
+    img{
+        width:100%;
     }
 }
