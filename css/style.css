@@ -905,4 +905,72 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .fixCall a i {
   color: #fff;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.dashboard .dashCard {
+  padding: 30px 25px;
+  border: 1px solid #cecece;
+  border-radius: 6px;
+  width: 40%;
+  margin: 10px 20px;
+  box-shadow: 2px 2px solid #e7e7e7;
+}
+.dashboard .dashCard a {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.dashboard .dashCard a h2 {
+  font-size: 25px;
+}
+.dashboard .dashCard a h2 img {
+  margin-right: 10px;
+  width: 25px;
+}
+.dashboard .dashCard a img {
+  width: 25px;
+}
+.dashboard .dashCard .list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.dashboard .dashCard .list p {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.dashboard .dashCard .btn {
+  background: #BB2649;
+  color: #fff;
+  border-radius: 6px;
+}
+.dashboard .dashCard .profile {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #cecece;
+  padding: 0 0 8px 0;
+  margin-bottom: 30px;
+}
+.dashboard .dashCard .profile img {
+  margin-right: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.dashboard .dashCard .profile p {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.dashCard.pro {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
