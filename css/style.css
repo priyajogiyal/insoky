@@ -950,6 +950,7 @@ p, h1, h2, h3, h4, h5, h6 {
   background: #BB2649;
   color: #fff;
   border-radius: 6px;
+  margin-top: 20px;
 }
 .dashboard .dashCard .profile {
   display: flex;
