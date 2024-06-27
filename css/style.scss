@@ -211,44 +211,44 @@ main{
         }
         .accordion-body{
             padding:10px 20px;
-            .card-body{
-                a{
-                    color:$black;
-                    font-family: $fontHead;
-                    font-size:14px;
-                }
-                hr{
-                    border-top: 1px solid #c25d6f;
-                    margin: 7px 0;
-                }
-                ul{
-                    list-style: none;
-                    display: flex;
-                    flex-wrap: wrap;
-                    padding-left:0;
-                    li{
-                        padding: 7px 15px;
-                        font-size: 12px;
-                        @include border(1px, #cecece);
-                        border-radius: 20px;
-                        margin: 5px 5px;
-                        a{
-                            color:$black;
 
-                        }
-                        &:hover{
-                            @include border(1px, $pink);
-                        }
-                    }
-                }
-            }
         }    
     }
     @media only screen and (max-width: 991px) {
         margin-bottom: 40px;
     }
 }
+.card-body{
+    a{
+        color:$black;
+        font-family: $fontHead;
+        font-size:14px;
+    }
+    hr{
+        border-top: 1px solid #c25d6f;
+        margin: 7px 0;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left:0;
+        li{
+            padding: 7px 15px;
+            font-size: 12px;
+            @include border(1px, #cecece);
+            border-radius: 20px;
+            margin: 5px 5px;
+            a{
+                color:$black;
 
+            }
+            &:hover{
+                @include border(1px, $pink);
+            }
+        }
+    }
+}
 footer{
     padding: 50px 0 0px;
     .innerF{
