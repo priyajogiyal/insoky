@@ -83,7 +83,7 @@
   color: #eabdc8;
 }
 
-.dropbox p.s {
+p.s {
   padding: 20px 0;
   text-align: center;
 }
@@ -566,9 +566,15 @@ textarea {
 }
 
 .fit-image {
-  width: 100%;
+  width: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+  margin: auto;
+  display: block;
+}
+
+.te-su {
+  color: #BB2649;
 }
 
 [type=radio]:checked,

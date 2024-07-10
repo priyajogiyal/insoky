@@ -452,8 +452,13 @@ textarea{
 
 
 .fit-image {
-  width: 100%;
+  width: 50%;
   object-fit: cover;
+  margin:auto;
+  display: block;
+}
+.te-su{
+  color:$pink
 }
 
 [type="radio"]:checked,
