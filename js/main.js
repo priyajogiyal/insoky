@@ -1,10 +1,65 @@
 // modal show
+
 $(document).ready(function() {
     var myModal = new bootstrap.Modal(document.getElementById('eighteenPlus'));
     myModal.show();
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const dropbox = document.getElementById('dropbox');
+    const fileInput = document.getElementById('fileInput');
+    const preview = document.getElementById('preview');
 
+    dropbox.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        dropbox.classList.add('dragover');
+    });
+
+    dropbox.addEventListener('dragleave', () => {
+        dropbox.classList.remove('dragover');
+    });
+
+    dropbox.addEventListener('drop', (e) => {
+        e.preventDefault();
+        dropbox.classList.remove('dragover');
+        const files = e.dataTransfer.files;
+        handleFiles(files);
+    });
+
+    dropbox.addEventListener('click', () => {
+        fileInput.click();
+    });
+
+    fileInput.addEventListener('change', (e) => {
+        const files = e.target.files;
+        handleFiles(files);
+    });
+
+    function handleFiles(files) {
+        Array.from(files).forEach(file => {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                const img = document.createElement('img');
+                img.src = e.target.result;
+
+                const previewImage = document.createElement('div');
+                previewImage.classList.add('preview-image');
+
+                const removeBtn = document.createElement('button');
+                removeBtn.textContent = 'X';
+                removeBtn.classList.add('remove-btn');
+                removeBtn.addEventListener('click', () => {
+                    previewImage.remove();
+                });
+
+                previewImage.appendChild(img);
+                previewImage.appendChild(removeBtn);
+                preview.appendChild(previewImage);
+            };
+            reader.readAsDataURL(file);
+        });
+    }
+});
 
 //dropdown
 
