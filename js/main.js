@@ -1,3 +1,4 @@
+"use strict";
 // modal show
 
 $(document).ready(function() {
@@ -5,6 +6,7 @@ $(document).ready(function() {
     myModal.show();
 });
 
+// Dropbox for uploading pictures
 document.addEventListener('DOMContentLoaded', () => {
     const dropbox = document.getElementById('dropbox');
     const fileInput = document.getElementById('fileInput');
@@ -59,6 +61,192 @@ document.addEventListener('DOMContentLoaded', () => {
             reader.readAsDataURL(file);
         });
     }
+});
+
+// disable all select
+
+document.addEventListener('DOMContentLoaded', () => {
+    const radioButtons = document.querySelectorAll('input[name="radio-group"]');
+    const selectElements = document.querySelectorAll('.adCards select');
+
+    // Function to disable all select elements
+    function disableAllSelects() {
+        selectElements.forEach(select => {
+            select.disabled = true;
+        });
+    }
+
+    // Add event listeners to radio buttons
+    radioButtons.forEach(radio => {
+        radio.addEventListener('change', (event) => {
+            disableAllSelects();
+            const selectedRadio = event.target;
+            if (selectedRadio.checked) {
+                const topAd = selectedRadio.closest('.top-ad');
+                if (topAd) {
+                    const selectElement = topAd.querySelector('select');
+                    if (selectElement) {
+                        selectElement.disabled = false;
+                    }
+                }
+            }
+        });
+    });
+
+    // Initial disable all selects
+    disableAllSelects();
+});
+
+// top add page
+
+document.addEventListener('DOMContentLoaded', () => {
+    const radioButtons = document.querySelectorAll('.t-ad');
+    const formGroups = document.querySelectorAll('.form-group');
+
+    // Function to hide all form-group elements
+    function hideAllFormGroups() {
+        formGroups.forEach(formGroup => {
+            formGroup.style.display = 'none';
+        });
+    }
+
+    // Add event listeners to radio buttons
+    radioButtons.forEach(radio => {
+        radio.addEventListener('change', (event) => {
+            hideAllFormGroups();
+            const selectedRadio = event.target;
+            if (selectedRadio.checked) {
+                const topAd = selectedRadio.closest('.top-ad');
+                if (topAd) {
+                    const nightElement = topAd.querySelector('.night');
+                    const formGroup = topAd.querySelector('.form-group');
+                    if (nightElement && formGroup) {
+                        formGroup.style.display = 'block';
+                    } else if (formGroup) {
+                        formGroup.style.display = 'none';
+                    }
+                }
+            }
+        });
+    });
+
+    // Initial hide all form-group elements
+    hideAllFormGroups();
+});
+
+// all checkbox select
+document.addEventListener('DOMContentLoaded', () => {
+    const topAds = document.querySelectorAll('.top-ad');
+
+    topAds.forEach(topAd => {
+        const allCheckbox = topAd.querySelector('.all');
+        const hiCheckboxes = topAd.querySelectorAll('.hi');
+
+        // Function to toggle the state of all .hi checkboxes based on the .all checkbox
+        function toggleHiCheckboxes(isChecked) {
+            hiCheckboxes.forEach(checkbox => {
+                checkbox.checked = isChecked;
+            });
+        }
+
+        // Add event listener to the .all checkbox
+        if (allCheckbox) {
+            allCheckbox.addEventListener('change', (event) => {
+                toggleHiCheckboxes(event.target.checked);
+            });
+        }
+
+        // Add event listeners to .hi checkboxes to handle individual changes
+        hiCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                // If any .hi checkbox is unchecked, also uncheck the .all checkbox
+                if (!checkbox.checked) {
+                    allCheckbox.checked = false;
+                } else {
+                    // If all .hi checkboxes are checked, check the .all checkbox
+                    const allChecked = Array.from(hiCheckboxes).every(cb => cb.checked);
+                    if (allChecked) {
+                        allCheckbox.checked = true;
+                    }
+                }
+            });
+        });
+    });
+});
+
+
+
+// show and hide
+document.addEventListener('DOMContentLoaded', () => {
+    const selectElements = document.querySelectorAll('.adCards select');
+    const radioButtons = document.querySelectorAll('.t-ad');
+
+    // Function to show or hide the form-group based on the select element and presence of day or night class
+    function toggleFormGroup(selectElement) {
+        const topAd = selectElement.closest('.top-ad');
+        if (topAd) {
+            const dayElement = topAd.querySelector('.day');
+            const nightElement = topAd.querySelector('.night');
+            const formGroup = topAd.querySelector('.form-group');
+            const radio = topAd.querySelector('.t-ad');
+            if ((radio && radio.checked && formGroup && dayElement ) ) {
+                formGroup.style.display = selectElement.value ? 'block' : 'none';
+            }  
+			else if (formGroup) {
+                formGroup.style.display = 'none';
+            }
+        }
+    }
+
+    // Add event listeners to select elements
+    selectElements.forEach(select => {
+        select.addEventListener('change', (event) => {
+            toggleFormGroup(event.target);
+        });
+    });
+
+    // Add event listeners to radio buttons to toggle form group on change
+    radioButtons.forEach(radio => {
+        radio.addEventListener('change', () => {
+            selectElements.forEach(select => {
+                toggleFormGroup(select);
+            });
+        });
+    });
+
+    // Initial check to hide or show form groups based on default select values
+    selectElements.forEach(select => {
+        toggleFormGroup(select);
+    });
+});
+
+// show and hide highlighs
+document.addEventListener('DOMContentLoaded', () => {
+    const selectElements = document.querySelectorAll('.adCards select');
+
+    // Function to show or hide the form-group based on the select element and presence of day class
+    function toggleFormGroup(selectElement) {
+        const topAd = selectElement.closest('.top-ad');
+        if (topAd) {
+            const dayElement = topAd.querySelector('.day');
+            const formGroup = topAd.querySelector('.form-group');
+            if (dayElement && formGroup) {
+                formGroup.style.display = selectElement.value ? 'block' : 'none';
+            }
+        }
+    }
+
+    // Add event listeners to select elements
+    selectElements.forEach(select => {
+        select.addEventListener('change', (event) => {
+            toggleFormGroup(event.target);
+        });
+    });
+
+    // Initial check to hide or show form groups based on default select values
+    selectElements.forEach(select => {
+        toggleFormGroup(select);
+    });
 });
 
 //dropdown
@@ -315,4 +503,16 @@ $(document).ready(function(){
 	
 	});
 
-  
+//   offset top
+// document.addEventListener('DOMContentLoaded', () => {
+//     const promotion = document.querySelector('.promotion');
+//     const offsetTop = promotion.offsetTop;
+
+//     window.addEventListener('scroll', () => {
+//         if (window.pageYOffset >= offsetTop) {
+//             promotion.classList.add('fixed');
+//         } else {
+//             promotion.classList.remove('fixed');
+//         }
+//     });
+// });

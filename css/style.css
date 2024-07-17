@@ -62,7 +62,7 @@
   padding: 30px 20px;
   text-align: center;
   width: 100%;
-  height: 150px;
+  height: 160px;
   cursor: pointer;
   background-color: white;
   position: relative;
@@ -125,6 +125,141 @@ p.s {
   border-radius: 6px;
   color: #fff;
   background: #BB2649;
+}
+
+.promotion {
+  padding: 20px 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.promotion button {
+  border: none;
+  padding: 6px 15px;
+  background: #BB2649;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.top-ad {
+  margin-bottom: 20px;
+}
+.top-ad [type=radio]:checked + label:before,
+.top-ad [type=radio]:not(:checked) + label:before {
+  top: 16px;
+  left: 16px;
+}
+.top-ad [type=radio]:checked + label:after, .top-ad [type=radio]:not(:checked) + label:after {
+  top: 20px;
+  left: 20px;
+}
+.top-ad .form-group {
+  display: none;
+}
+.top-ad label {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  padding-left: 15px !important;
+}
+.top-ad label .adCards {
+  padding-left: 5px;
+}
+.top-ad label .adCards h5 {
+  font-size: 25px;
+  padding-left: 25px;
+}
+.top-ad label .adCards small {
+  font-size: 12px;
+}
+.top-ad label .adCards .day {
+  color: #BB2649;
+}
+.top-ad label .adCards .day i {
+  padding-right: 6px;
+}
+.top-ad label .adCards .night {
+  color: #c25d6f;
+}
+.top-ad label .adCards .night i {
+  padding-right: 6px;
+}
+.top-ad label .adCards ul {
+  list-style: none;
+  padding-left: 0;
+  font-weight: 600;
+}
+.top-ad .up {
+  margin-bottom: 20px;
+}
+.top-ad .up h4 {
+  color: #BB2649;
+}
+.top-ad .up h4 i {
+  padding-right: 10px;
+}
+.top-ad .highlight {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+.top-ad .highlight .flex {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 15px;
+}
+.top-ad .highlight .flex h5 {
+  font-size: 22px;
+  color: #BB2649;
+}
+.top-ad .highlight .flex h5 i {
+  padding-right: 10px;
+}
+.top-ad .highlight .flex .switch {
+  display: inline-block;
+  height: 31px;
+  position: relative;
+  width: 57px;
+}
+.top-ad .highlight .flex .switch input {
+  display: none;
+}
+.top-ad .highlight .flex .slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+.top-ad .highlight .flex .slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 22px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 22px;
+}
+.top-ad .highlight .flex input:checked + .slider {
+  background-color: #BB2649;
+}
+.top-ad .highlight .flex input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.top-ad .highlight .flex .slider.round {
+  border-radius: 34px;
+}
+.top-ad .highlight .flex .slider.round:before {
+  border-radius: 50%;
+}
+.top-ad .highlight .flex label {
+  border-radius: 20px;
 }
 
 .modal.show .modal-dialog {
@@ -502,7 +637,7 @@ textarea {
 #progressbar li {
   list-style-type: none;
   font-size: 15px;
-  width: 25%;
+  width: 33%;
   float: left;
   position: relative;
   font-weight: 400;
@@ -569,12 +704,20 @@ textarea {
   width: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin: auto;
+  margin: 20px auto;
   display: block;
 }
 
 .te-su {
   color: #BB2649;
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+
+.fs-title.t {
+  padding: 30px 0 0px;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 [type=radio]:checked,
