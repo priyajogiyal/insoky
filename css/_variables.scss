@@ -40,6 +40,14 @@ $fontPara: "Poppins", sans-serif;
     font-size:14px;
     @include border(1px, $pink);
 }
+@mixin tag{
+    position: absolute;
+    display: block;
+    background: $pink;
+    padding: 5px 8px;
+    color: #fff;
+    border-radius: 6px;
+}
 // scrollbar
 
 /* width */
@@ -68,12 +76,36 @@ $fontPara: "Poppins", sans-serif;
     border: 1px solid #ccc;
     padding-right: 0;
     padding-left: 0;
-    margin-bottom:30px;
+    margin-bottom:50px;
     position:relative;
+    box-shadow: 2px 2px 20px #e2e2e2;
+    cursor:pointer;
     .img{
         min-height: 250px;
-        width: 35%;
+        width: 40%;
         height: auto;
+        swiper-container{
+            width:250px;
+            height:100%;
+        }
+        .swiper-button-next svg, .swiper-button-prev svg {
+            width: 20px !important;
+            color: #fff !important;
+        }
+        .img-count{
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: #cccccc82;
+            color: #fff;
+            padding: 3px 8px;
+            border-radius: 6px;
+            backdrop-filter: blur(10px);
+            i{
+                padding-right:8px;
+            }
+        }
+
         img{
             object-fit: cover;
             width: 100%;
@@ -82,7 +114,7 @@ $fontPara: "Poppins", sans-serif;
         }
     }
     .details{
-        padding: 30px 20px;
+        padding: 40px 20px;
         h2{
             color:$pink;
             font-size:25px;
@@ -96,8 +128,40 @@ $fontPara: "Poppins", sans-serif;
             }
         }
     }
+    .top-tag{
+        @include tag;
+        right: 20px;
+        top: -15px;
+        i{
+            padding-right:10px
+        }
+    }
+    .new-tag{
+        @include tag;
+        right: 110px;
+        top: -15px;
+    }
+    .contact{
+        display: flex;
+        position: absolute;
+        bottom:30px;
+        right:50px;
+        a{
+            img{
+                width:55px;
+                padding-right:15px;
+            }
+            i{
+                font-size:40px;
+                color:$pink;
+            }
+        }
+    }
 }
-
+.searchCard.highlight{
+    @include border(1px, $pink);
+    background-color:#faf0f2;
+}
 
 .dropbox {
     border: 2px dashed #ccc;

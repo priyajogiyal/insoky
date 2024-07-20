@@ -503,16 +503,18 @@ $(document).ready(function(){
 	
 	});
 
-//   offset top
-// document.addEventListener('DOMContentLoaded', () => {
-//     const promotion = document.querySelector('.promotion');
-//     const offsetTop = promotion.offsetTop;
-
-//     window.addEventListener('scroll', () => {
-//         if (window.pageYOffset >= offsetTop) {
-//             promotion.classList.add('fixed');
-//         } else {
-//             promotion.classList.remove('fixed');
-//         }
-//     });
-// });
+// img slider for result
+document.addEventListener('DOMContentLoaded', function () {
+	const swiper = new Swiper('.swiper-container', {
+		loop: true,
+		slidesPerView: 1,
+		// pagination: {
+		// 	el: '.swiper-pagination',
+		// 	clickable: true,
+		// },
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
+});
