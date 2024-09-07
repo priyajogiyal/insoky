@@ -81,7 +81,7 @@ $fontPara: "Poppins", sans-serif;
   width: 100%;
   .img {
     min-height: 250px;
-    width: 40%;
+    width: 22%;
     height: auto;
     swiper-container {
       width: 250px;
@@ -160,6 +160,7 @@ $fontPara: "Poppins", sans-serif;
   }
   @media only screen and (max-width: 767px) {
     .img {
+      width: 40%;
       swiper-container {
         width: 150px;
       }
@@ -174,6 +175,7 @@ $fontPara: "Poppins", sans-serif;
         width: 50px;
       }
     }
+
     .details {
       padding: 30px 10px;
       h2 {

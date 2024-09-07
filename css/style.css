@@ -34,7 +34,7 @@
 }
 .searchCard .img {
   min-height: 250px;
-  width: 40%;
+  width: 22%;
   height: auto;
 }
 .searchCard .img swiper-container {
@@ -121,6 +121,9 @@
   color: #bb2649;
 }
 @media only screen and (max-width: 767px) {
+  .searchCard .img {
+    width: 40%;
+  }
   .searchCard .img swiper-container {
     width: 150px;
   }
@@ -1054,7 +1057,7 @@ main {
   width: 100%;
   padding: 15px 0;
   position: fixed;
-  z-index: 9999;
+  z-index: 999;
   box-shadow: 1px 1px 5px #e5e5e5;
   top: 0;
   background: #fff;
@@ -1103,12 +1106,15 @@ main {
     font-size: 0;
     margin-left: 10px;
   }
+  .header .inner nav a img {
+    width: 20px;
+  }
   .header .inner nav a.btn {
     font-size: 10px;
     padding: 5px 8px;
   }
   .header .inner nav a.btn img {
-    width: 20px;
+    width: 16px;
   }
 }
 
@@ -1367,6 +1373,10 @@ h6 {
 .hero .search .btn svg {
   position: absolute;
   right: 20px;
+}
+
+.modal {
+  z-index: 9999;
 }
 
 .seacrhResult .btn {
@@ -1630,6 +1640,7 @@ h6 {
 }
 .fixCall a {
   font-size: 25px;
+  border-radius: 0;
 }
 .fixCall a i {
   color: #fff;
@@ -1702,4 +1713,50 @@ h6 {
 
 .dashCard.pro {
   width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .singleDetail {
+    margin-top: 20px;
+  }
+  .seacrhResult .btn {
+    top: 20px;
+    padding: 0 15px 0 25px;
+    font-size: 13px;
+  }
+  .seacrhResult .btn svg {
+    right: 15px;
+    top: 10px;
+  }
+  .fixCall {
+    flex-direction: row;
+    bottom: 0;
+    top: 92%;
+    z-index: 9;
+    padding: 8px 0px;
+    width: 100%;
+    border-radius: 0;
+  }
+  .fixCall a {
+    padding: 0;
+    width: 50%;
+    border-right: 1px solid #ccc;
+  }
+  .fixCall a i {
+    font-size: 25px;
+  }
+  .hero .search .btn {
+    width: 98%;
+    font-size: 10px;
+    padding: 0 20px 0 15px;
+    text-align: left;
+    text-transform: capitalize;
+    letter-spacing: 0.3px;
+  }
+  .intro h1 {
+    padding-top: 5%;
+  }
+  footer {
+    padding: 20px 0 0px;
+  }
 }/*# sourceMappingURL=style.css.map */
