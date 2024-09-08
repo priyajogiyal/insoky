@@ -69,7 +69,7 @@
 }
 .searchCard .details {
   padding: 40px 20px;
-  width: 60%;
+  width: 78%;
 }
 .searchCard .details h2 {
   color: #bb2649;
@@ -119,6 +119,14 @@
 .searchCard .contact a i {
   font-size: 40px;
   color: #bb2649;
+}
+@media only screen and (max-width: 991px) and (min-width: 767px) {
+  .searchCard .img {
+    width: 36%;
+  }
+  .searchCard .details {
+    width: 64%;
+  }
 }
 @media only screen and (max-width: 767px) {
   .searchCard .img {
@@ -1715,6 +1723,26 @@ h6 {
   width: 100%;
 }
 
+@media only screen and (max-width: 991px) and (min-width: 766px) {
+  .singleDetail {
+    margin-top: 20px;
+  }
+  .registerForm {
+    width: 100%;
+  }
+  .dashboard .dashCard.pro {
+    width: 100%;
+  }
+  .dashboard .dashCard {
+    width: 44%;
+  }
+  .section {
+    padding: 40px 0 25px;
+  }
+  .intro h1 {
+    padding-top: 5%;
+  }
+}
 @media only screen and (max-width: 767px) {
   .singleDetail {
     margin-top: 20px;

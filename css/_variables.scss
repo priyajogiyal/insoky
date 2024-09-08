@@ -115,7 +115,7 @@ $fontPara: "Poppins", sans-serif;
   }
   .details {
     padding: 40px 20px;
-    width: 60%;
+    width: 78%;
     h2 {
       color: $pink;
       font-size: 25px;
@@ -156,6 +156,14 @@ $fontPara: "Poppins", sans-serif;
         font-size: 40px;
         color: $pink;
       }
+    }
+  }
+  @media only screen and (max-width: 991px) and (min-width: 767px) {
+    .img {
+      width: 36%;
+    }
+    .details {
+      width: 64%;
     }
   }
   @media only screen and (max-width: 767px) {

@@ -767,6 +767,26 @@ h6 {
 .dashCard.pro {
   width: 100%;
 }
+@media only screen and (max-width: 991px) and (min-width: 766px) {
+  .singleDetail {
+    margin-top: 20px;
+  }
+  .registerForm {
+    width: 100%;
+  }
+  .dashboard .dashCard.pro {
+    width: 100%;
+  }
+  .dashboard .dashCard {
+    width: 44%;
+  }
+  .section {
+    padding: 40px 0 25px;
+  }
+  .intro h1 {
+    padding-top: 5%;
+  }
+}
 
 @media only screen and (max-width: 767px) {
   .singleDetail {
